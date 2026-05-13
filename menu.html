@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    Veloura Pâtisserie
+  </title>
+
+  <!-- CSS -->
+
+  <link
+    rel="stylesheet"
+    href="menu.css"
+  />
+
+  <!-- GOOGLE FONT -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar">
+
+    <div class="logo">
+
+      <span>
+        Veloura
+      </span>
+
+      <small>
+        PÂTISSERIE
+      </small>
+
+    </div>
+
+    <button class="cart-nav-btn">
+
+      <span id="nav-cart-count">
+        0
+      </span>
+
+      Items
+
+    </button>
+
+  </nav>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <span class="hero-tag">
+        Handcrafted Luxury Desserts
+      </span>
+
+      <h1>
+        Desserts made
+        with elegance,
+        warmth & love.
+      </h1>
+
+      <p>
+        Freshly handcrafted pastries and celebration cakes
+        curated for unforgettable moments.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- CATEGORY PILLS -->
+
+  <section class="categories">
+
+    <button class="category active">
+      All
+    </button>
+
+    <button class="category">
+      Cakes
+    </button>
+
+    <button class="category">
+      Cupcakes
+    </button>
+
+    <button class="category">
+      Cheesecakes
+    </button>
+
+    <button class="category">
+      Dessert Jars
+    </button>
+
+  </section>
+
+  <!-- MENU GRID -->
+
+  <section class="menu-grid">
+
+    <!-- ITEM -->
+
+    <div class="menu-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1974&auto=format&fit=crop"
+        alt=""
+      />
+
+      <div class="menu-info">
+
+        <span class="menu-type">
+          Signature Cake
+        </span>
+
+        <h2>
+          Strawberry Dream Cake
+        </h2>
+
+        <p>
+          Fresh strawberry layers with whipped vanilla cream.
+        </p>
+
+        <div class="menu-bottom">
+
+          <strong>
+            ₹699
+          </strong>
+
+          <button
+            onclick="addToCart(
+              'Strawberry Dream Cake',
+              699
+            )"
+          >
+            Add ♡
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ITEM -->
+
+    <div class="menu-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=1974&auto=format&fit=crop"
+        alt=""
+      />
+
+      <div class="menu-info">
+
+        <span class="menu-type">
+          Chocolate Collection
+        </span>
+
+        <h2>
+          Belgian Chocolate Slice
+        </h2>
+
+        <p>
+          Rich dark chocolate layered with silky ganache.
+        </p>
+
+        <div class="menu-bottom">
+
+          <strong>
+            ₹420
+          </strong>
+
+          <button
+            onclick="addToCart(
+              'Belgian Chocolate Slice',
+              420
+            )"
+          >
+            Add ♡
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ITEM -->
+
+    <div class="menu-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?q=80&w=1974&auto=format&fit=crop"
+        alt=""
+      />
+
+      <div class="menu-info">
+
+        <span class="menu-type">
+          Cupcake
+        </span>
+
+        <h2>
+          Red Velvet Cupcake
+        </h2>
+
+        <p>
+          Cream cheese frosting over soft velvet sponge.
+        </p>
+
+        <div class="menu-bottom">
+
+          <strong>
+            ₹220
+          </strong>
+
+          <button
+            onclick="addToCart(
+              'Red Velvet Cupcake',
+              220
+            )"
+          >
+            Add ♡
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ITEM -->
+
+    <div class="menu-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=1974&auto=format&fit=crop"
+        alt=""
+      />
+
+      <div class="menu-info">
+
+        <span class="menu-type">
+          Dessert Jar
+        </span>
+
+        <h2>
+          Lotus Biscoff Jar
+        </h2>
+
+        <p>
+          Creamy lotus mousse layered with crunchy biscuits.
+        </p>
+
+        <div class="menu-bottom">
+
+          <strong>
+            ₹350
+          </strong>
+
+          <button
+            onclick="addToCart(
+              'Lotus Biscoff Jar',
+              350
+            )"
+          >
+            Add ♡
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ITEM -->
+
+    <div class="menu-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?q=80&w=1974&auto=format&fit=crop"
+        alt=""
+      />
+
+      <div class="menu-info">
+
+        <span class="menu-type">
+          Bento Cake
+        </span>
+
+        <h2>
+          Vanilla Bento Cake
+        </h2>
+
+        <p>
+          Minimal handcrafted cake with vanilla bean cream.
+        </p>
+
+        <div class="menu-bottom">
+
+          <strong>
+            ₹580
+          </strong>
+
+          <button
+            onclick="addToCart(
+              'Vanilla Bento Cake',
+              580
+            )"
+          >
+            Add ♡
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ITEM -->
+
+    <div class="menu-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=1974&auto=format&fit=crop"
+        alt=""
+      />
+
+      <div class="menu-info">
+
+        <span class="menu-type">
+          Cheesecake
+        </span>
+
+        <h2>
+          Blueberry Cheesecake
+        </h2>
+
+        <p>
+          Smooth cheesecake finished with blueberry glaze.
+        </p>
+
+        <div class="menu-bottom">
+
+          <strong>
+            ₹640
+          </strong>
+
+          <button
+            onclick="addToCart(
+              'Blueberry Cheesecake',
+              640
+            )"
+          >
+            Add ♡
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FLOATING CART -->
+
+  <div
+    class="floating-cart"
+    id="floating-cart"
+  >
+
+    <div class="cart-details">
+
+      <span id="floating-count">
+        0 Items
+      </span>
+
+      <strong>
+        ₹<span id="floating-total">0</span>
+      </strong>
+
+    </div>
+
+    <a
+      href="checkout.html"
+      class="review-btn"
+    >
+      Review Sweet Order ♡
+    </a>
+
+  </div>
+
+  <!-- TOAST -->
+
+  <div
+    class="toast"
+    id="toast"
+  >
+    Added to cart ♡
+  </div>
+
+  <!-- JS -->
+
+  <script src="menu.js"></script>
+
+</body>
+</html>
